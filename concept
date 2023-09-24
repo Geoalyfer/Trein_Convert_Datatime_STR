@@ -1,0 +1,22 @@
+#Convertendo datetime para strings
+
+data = datetime.datetime(2022, 6, 29, 19, 30, 15)
+
+print(data.strftime("%A"))
+Wednesday
+
+#Modificando a localidade
+
+import locale
+
+locale.setlocale(locale.LC_ALL, "pt_BR")
+'pt_BR'
+
+print(data.strftime("%A"))
+quarta-feira
+
+print(data.strftime("%d/%m/%Y - %A - %B"))
+29/06/2022 - quarta-feira - junho
+
+  
+  
